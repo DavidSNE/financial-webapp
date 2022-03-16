@@ -14,15 +14,27 @@ function App() {
         "description": "Crouch",
         "operationDate": "Mr Crouch"
     }]);
+    const [summary, setSummary] = useState([]);
 
     useEffect(() => {
         getMovements(); //fetch data from api
+    }, []);
+
+    useEffect(() => {
+        getSummary(); //fetch data from api
     }, []);
 
     const getMovements = async () => {
         const response = await fetch("http://localhost/movement");
         const movements = await response.json();
         setMovements(movements);
+    };
+
+    const getSummary = async () => {
+        const response = await fetch("http://localhost/movements/byMonth");
+        const summary = await response.json();
+        console.log(summary);
+        setSummary(summary);
     };
 
 
@@ -204,6 +216,28 @@ function App() {
                             </div>
                         </nav>
                         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                            <h2>Summary</h2>
+                            <Table striped bordered hover variant="dark" summary={summary}>
+                                <thead>
+                                <tr>
+                                    <th>Expenses</th>
+                                    <th>Balance</th>
+                                    <th>Income</th>
+                                    <th>Period</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {summary.map(s =>
+                                    <tr>
+                                        <td>{s.expenses}€</td>
+                                        <td>{s.balance}</td>
+                                        <td>{s.income}</td>
+                                        <td>{s.period}</td>
+                                    </tr>
+                                )}
+                                </tbody>
+                            </Table>
+                            <h2>Movements</h2>
                             <Table striped bordered hover variant="dark" movements={movements}>
                                 <thead>
                                 <tr>
