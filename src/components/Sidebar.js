@@ -1,12 +1,12 @@
 import React from "react";
 
-function Sidebar() {
+function Sidebar(props) {
     return (
         <>
             <nav id="sidebarMenu" className="col-md-1 col-lg-1 d-md-block  sidebar collapse">
                 <div className="position-sticky pt-3">
                     <ul className="nav flex-column">
-                        <li className="nav-item">
+                        <li className="nav-item" onClick={() => props.update('dashboard')}>
                             <a className="nav-link active " aria-current="page" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -17,7 +17,7 @@ function Sidebar() {
                                 Dashboard
                             </a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" onClick={() => props.update('summaryTables')}>
                             <a className="nav-link " href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
