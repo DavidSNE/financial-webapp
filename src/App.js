@@ -43,14 +43,14 @@ function App() {
     return (
         <>
             <body>
-                <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+                <header className="navbar  sticky-top  flex-md-nowrap p-0 shadow">
                     <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Financial Analyzer</a>
                     <button className="navbar-toggler position-absolute d-md-none collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <input className="form-control form-control-dark w-100" type="text" placeholder="Search"
+                    <input className="form-control  w-100" type="text" placeholder="Search"
                            aria-label="Search"/>
                     <div className="navbar-nav">
                         <div className="nav-item text-nowrap">
@@ -58,13 +58,13 @@ function App() {
                         </div>
                     </div>
                 </header>
-                <div class="container-fluid bg-dark">
+                <div class="container-fluid ">
                     <div class="row">
-                        <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                        <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block  sidebar collapse">
                             <div className="position-sticky pt-3">
                                 <ul className="nav flex-column">
                                     <li className="nav-item">
-                                        <a className="nav-link active text-white" aria-current="page" href="#">
+                                        <a className="nav-link active " aria-current="page" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-home" aria-hidden="true">
@@ -75,7 +75,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-file" aria-hidden="true">
@@ -86,7 +86,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-shopping-cart"
@@ -100,7 +100,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-users" aria-hidden="true">
@@ -113,7 +113,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-bar-chart-2"
@@ -126,7 +126,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-layers" aria-hidden="true">
@@ -141,7 +141,7 @@ function App() {
 
                                 <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                                     <span>Saved reports</span>
-                                    <a className="link-secondary text-white" href="#" aria-label="Add a new report">
+                                    <a className="link-secondary " href="#" aria-label="Add a new report">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                              stroke-linejoin="round" className="feather feather-plus-circle" aria-hidden="true">
@@ -152,8 +152,8 @@ function App() {
                                     </a>
                                 </h6>
                                 <ul className="nav flex-column mb-2">
-                                    <li className="nav-item text-white">
-                                        <a className="nav-link text-white" href="#">
+                                    <li className="nav-item ">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-file-text"
@@ -168,7 +168,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-file-text"
@@ -183,7 +183,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-file-text"
@@ -198,7 +198,7 @@ function App() {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#">
+                                        <a className="nav-link " href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                  stroke-linejoin="round" className="feather feather-file-text"
@@ -217,7 +217,7 @@ function App() {
                         </nav>
                         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                             <h2>Summary</h2>
-                            <Table striped bordered hover variant="dark" summary={summary}>
+                            <Table striped bordered hover  summary={summary}>
                                 <thead>
                                 <tr>
                                     <th>Expenses</th>
@@ -238,7 +238,7 @@ function App() {
                                 </tbody>
                             </Table>
                             <h2>Movements</h2>
-                            <Table striped bordered hover variant="dark" movements={movements}>
+                            <Table striped bordered hover  movements={movements}>
                                 <thead>
                                 <tr>
                                     <th>Amount</th>
